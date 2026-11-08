@@ -1,0 +1,6 @@
+{
+  "name": "TESTIFY",
+  "description": "Complete Online Examination Platform for SSC & Railway with bilingual CBT mocks, TCS iON exam simulation, descriptive tests, and instant analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
