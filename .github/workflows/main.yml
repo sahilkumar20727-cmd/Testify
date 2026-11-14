@@ -25,14 +25,16 @@ jobs:
           java-version: '17'
 
     
+    
       - name: Setup Android SDK
         run: |
           SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
-          yes | "$SDKMANAGER" --sdk_root="$ANDROID_HOME" --licenses || true
-          "$SDKMANAGER" --sdk_root="$ANDROID_HOME" \
-            "platforms;android-36-ext1" \
+
+          "$SDKMANAGER" --sdk_root="$ANDROID_HOME" --install \
+            "platforms;android-36" \
             "build-tools;36.0.0" \
             "platform-tools"
+
       - name: Install Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
